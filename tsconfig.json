@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "declaration": false,
+        "allowSyntheticDefaultImports": true,
+        "useDefineForClassFields": true,
+        "lib": ["es6", "dom", "es2017"],
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "sourceMap": true,
+        "target": "ES2017",
+        "jsx": "preserve",
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./app/javascript/*"]
+        }
+    },
+    "include": ["./app/javascript"],
+    "exclude": [
+        ".git",
+        "node_modules",
+        "vendor",
+        "public"
+    ],
+    "typeAcquisition": {
+        "include": ["jest"]
+    },
+    "compileOnSave": false
+}
